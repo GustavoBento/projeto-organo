@@ -8,11 +8,11 @@ interface CampoTextoProps {
     aoAlterado: (valor: string) => void
 }
 
-const CampoTexto = ({aoAlterado, label, placeholder, valor, obrigatorio = false}: CampoTextoProps) => {
+const CampoTexto = ({placeholder, label, valor, aoAlterado, obrigatorio = false}:CampoTextoProps) => {
 
     const placeholderModificada = `${placeholder}...` 
 
-    const aoDigitado = (evento: React.ChangeEvent<HTMLInputElement>) => {
+    const aoDigitado = (evento:React.ChangeEvent<HTMLInputElement>) => {
         aoAlterado(evento.target.value)
     }
 

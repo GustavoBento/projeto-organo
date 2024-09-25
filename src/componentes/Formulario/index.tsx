@@ -3,10 +3,10 @@ import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
-import { IColabarador } from '../../shared/IColaborador'
+import { IColaborador } from '../../shared/IColaborador'
 
 interface FormularioProps {
-    aoColaboradorCadastrado: (colaboradores: IColabarador) => void
+    aoColaboradorCadastrado: (colaboradores: IColaborador) => void
     times: string[]
 }
 

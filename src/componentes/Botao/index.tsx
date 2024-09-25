@@ -7,7 +7,7 @@ interface BotaoProps {
 
 const Botao = (props: BotaoProps) => {
     return (<button className='botao'>
-        {props.children}
+        {props.children} 
     </button>)
 }
 
